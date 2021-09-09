@@ -7,7 +7,7 @@
  
  ## Requirements
  
- To build and run the project you need iOS SDK 13 or newer installed on your machine.
+ To build and run the project you need iOS SDK 14.0 or newer installed on your machine.
  
  ## Scope
  
