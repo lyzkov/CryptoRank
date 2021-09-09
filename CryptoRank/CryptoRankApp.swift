@@ -11,7 +11,7 @@ import SwiftUI
 struct CryptoRankApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            CurrenciesListView()
         }
     }
 }

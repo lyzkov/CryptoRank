@@ -8,11 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		A3CCD27526EA3582004D5CB7 /* CryptoRankApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CCD27426EA3582004D5CB7 /* CryptoRankApp.swift */; };
-		A3CCD27726EA3582004D5CB7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CCD27626EA3582004D5CB7 /* ContentView.swift */; };
+		A3CCD27726EA3582004D5CB7 /* CurrenciesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CCD27626EA3582004D5CB7 /* CurrenciesListView.swift */; };
 		A3CCD27926EA3584004D5CB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3CCD27826EA3584004D5CB7 /* Assets.xcassets */; };
 		A3CCD27C26EA3584004D5CB7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3CCD27B26EA3584004D5CB7 /* Preview Assets.xcassets */; };
 		A3CCD28626EA3584004D5CB7 /* CryptoRankTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CCD28526EA3584004D5CB7 /* CryptoRankTests.swift */; };
 		A3CCD29026EA3584004D5CB7 /* CryptoRankUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CCD28F26EA3584004D5CB7 /* CryptoRankUITests.swift */; };
+		A3CCD29D26EA4644004D5CB7 /* CurrencyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CCD29C26EA4644004D5CB7 /* CurrencyView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,13 +36,14 @@
 /* Begin PBXFileReference section */
 		A3CCD27126EA3582004D5CB7 /* CryptoRank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoRank.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3CCD27426EA3582004D5CB7 /* CryptoRankApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoRankApp.swift; sourceTree = "<group>"; };
-		A3CCD27626EA3582004D5CB7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A3CCD27626EA3582004D5CB7 /* CurrenciesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CurrenciesListView.swift; path = CryptoRank/CurrenciesListView.swift; sourceTree = SOURCE_ROOT; };
 		A3CCD27826EA3584004D5CB7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A3CCD27B26EA3584004D5CB7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A3CCD28126EA3584004D5CB7 /* CryptoRankTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CryptoRankTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3CCD28526EA3584004D5CB7 /* CryptoRankTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoRankTests.swift; sourceTree = "<group>"; };
 		A3CCD28B26EA3584004D5CB7 /* CryptoRankUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CryptoRankUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3CCD28F26EA3584004D5CB7 /* CryptoRankUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoRankUITests.swift; sourceTree = "<group>"; };
+		A3CCD29C26EA4644004D5CB7 /* CurrencyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,7 +95,8 @@
 			isa = PBXGroup;
 			children = (
 				A3CCD27426EA3582004D5CB7 /* CryptoRankApp.swift */,
-				A3CCD27626EA3582004D5CB7 /* ContentView.swift */,
+				A3CCD27626EA3582004D5CB7 /* CurrenciesListView.swift */,
+				A3CCD29C26EA4644004D5CB7 /* CurrencyView.swift */,
 				A3CCD27826EA3584004D5CB7 /* Assets.xcassets */,
 				A3CCD27A26EA3584004D5CB7 /* Preview Content */,
 			);
@@ -254,7 +257,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A3CCD27726EA3582004D5CB7 /* ContentView.swift in Sources */,
+				A3CCD27726EA3582004D5CB7 /* CurrenciesListView.swift in Sources */,
+				A3CCD29D26EA4644004D5CB7 /* CurrencyView.swift in Sources */,
 				A3CCD27526EA3582004D5CB7 /* CryptoRankApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
