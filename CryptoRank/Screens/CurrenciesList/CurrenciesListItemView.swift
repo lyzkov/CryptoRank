@@ -7,9 +7,9 @@
 
 import SwiftUI
 
-struct CurrencyView: View {
+struct CurrenciesListItemView: View {
 
-    let item: CurrencyListItem
+    let item: CurrenciesListItem
 
     var body: some View {
         VStack(alignment: .leading) {

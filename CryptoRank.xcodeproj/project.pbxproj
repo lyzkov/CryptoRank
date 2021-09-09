@@ -13,7 +13,14 @@
 		A3CCD27C26EA3584004D5CB7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3CCD27B26EA3584004D5CB7 /* Preview Assets.xcassets */; };
 		A3CCD28626EA3584004D5CB7 /* CryptoRankTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CCD28526EA3584004D5CB7 /* CryptoRankTests.swift */; };
 		A3CCD29026EA3584004D5CB7 /* CryptoRankUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CCD28F26EA3584004D5CB7 /* CryptoRankUITests.swift */; };
-		A3CCD29D26EA4644004D5CB7 /* CurrencyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CCD29C26EA4644004D5CB7 /* CurrencyView.swift */; };
+		A3CCD29D26EA4644004D5CB7 /* CurrenciesListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CCD29C26EA4644004D5CB7 /* CurrenciesListItemView.swift */; };
+		A3CCD2A026EA6292004D5CB7 /* Tickers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CCD29F26EA6292004D5CB7 /* Tickers.swift */; };
+		A3CCD2A226EA62CC004D5CB7 /* Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CCD2A126EA62CC004D5CB7 /* Info.swift */; };
+		A3CCD2A526EA62FA004D5CB7 /* Datum.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CCD2A426EA62FA004D5CB7 /* Datum.swift */; };
+		A3CCD2A726EA792C004D5CB7 /* CurrenciesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CCD2A626EA792C004D5CB7 /* CurrenciesListViewModel.swift */; };
+		A3CCD2A926EA7A38004D5CB7 /* CurrenciesListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CCD2A826EA7A38004D5CB7 /* CurrenciesListItem.swift */; };
+		A3CCD2AC26EA7E36004D5CB7 /* URL+QueryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CCD2AB26EA7E36004D5CB7 /* URL+QueryItem.swift */; };
+		A3CCD2AF26EA7E5C004D5CB7 /* TickersService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CCD2AE26EA7E5C004D5CB7 /* TickersService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,14 +43,21 @@
 /* Begin PBXFileReference section */
 		A3CCD27126EA3582004D5CB7 /* CryptoRank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoRank.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3CCD27426EA3582004D5CB7 /* CryptoRankApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoRankApp.swift; sourceTree = "<group>"; };
-		A3CCD27626EA3582004D5CB7 /* CurrenciesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CurrenciesListView.swift; path = CryptoRank/CurrenciesListView.swift; sourceTree = SOURCE_ROOT; };
+		A3CCD27626EA3582004D5CB7 /* CurrenciesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CurrenciesListView.swift; path = CryptoRank/Screens/CurrenciesList/CurrenciesListView.swift; sourceTree = SOURCE_ROOT; };
 		A3CCD27826EA3584004D5CB7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A3CCD27B26EA3584004D5CB7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A3CCD28126EA3584004D5CB7 /* CryptoRankTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CryptoRankTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3CCD28526EA3584004D5CB7 /* CryptoRankTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoRankTests.swift; sourceTree = "<group>"; };
 		A3CCD28B26EA3584004D5CB7 /* CryptoRankUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CryptoRankUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3CCD28F26EA3584004D5CB7 /* CryptoRankUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoRankUITests.swift; sourceTree = "<group>"; };
-		A3CCD29C26EA4644004D5CB7 /* CurrencyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyView.swift; sourceTree = "<group>"; };
+		A3CCD29C26EA4644004D5CB7 /* CurrenciesListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrenciesListItemView.swift; sourceTree = "<group>"; };
+		A3CCD29F26EA6292004D5CB7 /* Tickers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tickers.swift; sourceTree = "<group>"; };
+		A3CCD2A126EA62CC004D5CB7 /* Info.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Info.swift; sourceTree = "<group>"; };
+		A3CCD2A426EA62FA004D5CB7 /* Datum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Datum.swift; sourceTree = "<group>"; };
+		A3CCD2A626EA792C004D5CB7 /* CurrenciesListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrenciesListViewModel.swift; sourceTree = "<group>"; };
+		A3CCD2A826EA7A38004D5CB7 /* CurrenciesListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrenciesListItem.swift; sourceTree = "<group>"; };
+		A3CCD2AB26EA7E36004D5CB7 /* URL+QueryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+QueryItem.swift"; sourceTree = "<group>"; };
+		A3CCD2AE26EA7E5C004D5CB7 /* TickersService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickersService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,9 +108,11 @@
 		A3CCD27326EA3582004D5CB7 /* CryptoRank */ = {
 			isa = PBXGroup;
 			children = (
+				A3CCD2B026EA7F60004D5CB7 /* Screens */,
+				A3CCD2AD26EA7E4B004D5CB7 /* Common */,
+				A3CCD2AA26EA7E12004D5CB7 /* Facility */,
+				A3CCD29E26EA627E004D5CB7 /* Model */,
 				A3CCD27426EA3582004D5CB7 /* CryptoRankApp.swift */,
-				A3CCD27626EA3582004D5CB7 /* CurrenciesListView.swift */,
-				A3CCD29C26EA4644004D5CB7 /* CurrencyView.swift */,
 				A3CCD27826EA3584004D5CB7 /* Assets.xcassets */,
 				A3CCD27A26EA3584004D5CB7 /* Preview Content */,
 			);
@@ -125,6 +141,59 @@
 				A3CCD28F26EA3584004D5CB7 /* CryptoRankUITests.swift */,
 			);
 			path = CryptoRankUITests;
+			sourceTree = "<group>";
+		};
+		A3CCD29E26EA627E004D5CB7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A3CCD2A326EA62E2004D5CB7 /* Tickers */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A3CCD2A326EA62E2004D5CB7 /* Tickers */ = {
+			isa = PBXGroup;
+			children = (
+				A3CCD29F26EA6292004D5CB7 /* Tickers.swift */,
+				A3CCD2A126EA62CC004D5CB7 /* Info.swift */,
+				A3CCD2A426EA62FA004D5CB7 /* Datum.swift */,
+			);
+			path = Tickers;
+			sourceTree = "<group>";
+		};
+		A3CCD2AA26EA7E12004D5CB7 /* Facility */ = {
+			isa = PBXGroup;
+			children = (
+				A3CCD2AB26EA7E36004D5CB7 /* URL+QueryItem.swift */,
+			);
+			path = Facility;
+			sourceTree = "<group>";
+		};
+		A3CCD2AD26EA7E4B004D5CB7 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				A3CCD2AE26EA7E5C004D5CB7 /* TickersService.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		A3CCD2B026EA7F60004D5CB7 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				A3CCD2B126EA7F7A004D5CB7 /* CurrenciesList */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		A3CCD2B126EA7F7A004D5CB7 /* CurrenciesList */ = {
+			isa = PBXGroup;
+			children = (
+				A3CCD27626EA3582004D5CB7 /* CurrenciesListView.swift */,
+				A3CCD2A626EA792C004D5CB7 /* CurrenciesListViewModel.swift */,
+				A3CCD2A826EA7A38004D5CB7 /* CurrenciesListItem.swift */,
+				A3CCD29C26EA4644004D5CB7 /* CurrenciesListItemView.swift */,
+			);
+			path = CurrenciesList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,8 +327,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				A3CCD27726EA3582004D5CB7 /* CurrenciesListView.swift in Sources */,
-				A3CCD29D26EA4644004D5CB7 /* CurrencyView.swift in Sources */,
+				A3CCD2A926EA7A38004D5CB7 /* CurrenciesListItem.swift in Sources */,
+				A3CCD2A026EA6292004D5CB7 /* Tickers.swift in Sources */,
+				A3CCD29D26EA4644004D5CB7 /* CurrenciesListItemView.swift in Sources */,
+				A3CCD2A226EA62CC004D5CB7 /* Info.swift in Sources */,
+				A3CCD2AF26EA7E5C004D5CB7 /* TickersService.swift in Sources */,
+				A3CCD2AC26EA7E36004D5CB7 /* URL+QueryItem.swift in Sources */,
 				A3CCD27526EA3582004D5CB7 /* CryptoRankApp.swift in Sources */,
+				A3CCD2A726EA792C004D5CB7 /* CurrenciesListViewModel.swift in Sources */,
+				A3CCD2A526EA62FA004D5CB7 /* Datum.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
