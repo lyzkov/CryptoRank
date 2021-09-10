@@ -18,7 +18,7 @@
  
  ## 🧩 Extras
  
- - [ ] Trend indicator
- - [ ] Unit tests
+ - [x] Trend indicator
+ - [x] Unit tests
  
  ## 🧩 Summary
