@@ -8,17 +8,20 @@
 import Foundation
 import Combine
 
-final class TickersService {
+let decoder: JSONDecoder = {
+    let decoder = JSONDecoder()
+    decoder.keyDecodingStrategy = .convertFromSnakeCase
+    return decoder
+}()
 
+protocol TickersProvider {
+    func tickers(limit: Int) -> AnyPublisher<Tickers, Error>
+}
+
+final class TickersService: TickersProvider {
     let url = URL(string: "https://api.coinlore.com/api/tickers/")!
 
-    let decoder: JSONDecoder = {
-        let decoder = JSONDecoder()
-        decoder.keyDecodingStrategy = .convertFromSnakeCase
-        return decoder
-    }()
-
-    func tickers(limit: Int = 21) -> AnyPublisher<Tickers, Error> {
+    func tickers(limit: Int) -> AnyPublisher<Tickers, Error> {
         let url = url.appendingQueryItem(name: "limit", value: "\(limit)")
 
         return URLSession.shared.dataTaskPublisher(for: url)

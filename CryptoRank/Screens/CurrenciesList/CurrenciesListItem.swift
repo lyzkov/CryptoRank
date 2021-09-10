@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct CurrenciesListItem: Identifiable {
+struct CurrenciesListItem: Identifiable, Equatable {
     let id: String
     let symbol: String
     let name: String

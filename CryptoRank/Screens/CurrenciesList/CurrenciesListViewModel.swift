@@ -11,31 +11,28 @@ import Combine
 final class CurrenciesListViewModel: ObservableObject {
 
     @Published
-    var items: [CurrenciesListItem] = []
+    private(set) var items: [CurrenciesListItem] = []
 
     var cancellable = Set<AnyCancellable>()
 
-    let tickersService = TickersService()
+    var refreshInterval: TimeInterval = 30
 
-    let refreshInterval: TimeInterval = 30
+    private var category: CurrenciesCategory = .name
 
-    var category: CurrenciesCategory = .name
-
-    init() {
+    init(provider: TickersProvider = TickersService()) {
         Timer.publish(every: refreshInterval, on: .main, in: .default)
             .autoconnect()
             .prepend(Date())
-            .flatMap { [self] _ in
-                tickersService.tickers()
+            .flatMap { _ in
+                provider.tickers(limit: 21)
             }
             .sink(receiveCompletion: { completion in
                 if case .failure(let error) = completion {
                     print(error)
                 }
             }, receiveValue: { [self] tickers in
-                self.items = tickers.data.map({ datum in
-                    CurrenciesListItem(from: datum)
-                })
+                self.items = tickers.data
+                    .map(CurrenciesListItem.init(from:))
                 sort(by: category)
             })
             .store(in: &cancellable)

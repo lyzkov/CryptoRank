@@ -8,26 +8,22 @@
 import XCTest
 @testable import CryptoRank
 
-class CryptoRankTests: XCTestCase {
+final class CryptoRankTests: XCTestCase {
+
+    let tickersProvider = TickersProviderMock()
+
+    var viewModel: CurrenciesListViewModel!
 
     override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        viewModel = CurrenciesListViewModel(provider: tickersProvider)
     }
 
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
+    func testLoadItems() throws {
+        let itemsPublisher = viewModel.$items.collectNext(1)
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+        let itemsArrays = try self.await(itemsPublisher)
+        XCTAssertEqual(itemsArrays.count, 1)
+        XCTAssertEqual(itemsArrays.first, [CurrenciesListItem(id: "90", symbol: "BTC", name: "Bitcoin", priceUsd: "46205.70", percentChange24H: "-0.53", percentChange1H: "-0.08", volume24: 28501182980.629158)])
     }
 
 }
