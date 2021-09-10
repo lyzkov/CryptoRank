@@ -12,8 +12,8 @@ struct CurrenciesListItem: Identifiable, Equatable {
     let symbol: String
     let name: String
     let priceUsd: String
-    let percentChange24H: String
-    let percentChange1H: String
+    let percentChange24H: Double
+    let percentChange1H: Double
     let volume24: Double
 }
 
@@ -24,8 +24,8 @@ extension CurrenciesListItem {
         symbol = datum.symbol
         name = datum.name
         priceUsd = datum.priceUsd
-        percentChange24H = datum.percentChange24H
-        percentChange1H = datum.percentChange1H
+        percentChange24H = Double(datum.percentChange24H) ?? 0
+        percentChange1H = Double(datum.percentChange1H) ?? 0
         volume24 = datum.volume24
     }
 

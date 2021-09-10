@@ -45,9 +45,9 @@ final class CurrenciesListViewModel: ObservableObject {
             case .name:
                 return lhs.name < rhs.name
             case .volume24:
-                return lhs.volume24 < rhs.volume24
+                return lhs.volume24 > rhs.volume24
             case .change24:
-                return lhs.percentChange24H < rhs.percentChange24H
+                return lhs.percentChange24H > rhs.percentChange24H
             }
         }
     }
